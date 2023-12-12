@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lojja Nei Naki</title>
+    <script>
+      function digiClock() {
+        let h = "";
+        let m = "";
+        let s = "";
+
+        let t = new Date();
+        h = t.getHours();
+        m = t.getMinutes();
+        s = t.getSeconds();
+        ap = "";
+        if (h >= 12) {
+          ap = "PM";
+          h=h-12;
+        } else {
+          ap = "AM";
+        }
+        document.getElementById("l1").innerHTML = h;
+        document.getElementById("l2").innerHTML = m;
+        document.getElementById("l3").innerHTML = s;
+        document.getElementById("l4").innerHTML = ap;
+      }
+
+      setInterval(digiClock, 1000);
+    </script>
+  </head>
+  <body>
+    <h2>Turn On Desktop Mode</h2>
+    <div id="l1"></div>
+    <div id="l2"></div>
+    <div id="l3"></div>
+    <div id="l4">P</div>
+    <h1>Dekhchis to Time kintu dariye nei tor jonno.Porte Jaa</h1>
+
+    <p>Thank Me Later &#128514 &#128568</p>
+    
+  </body>
+</html>
